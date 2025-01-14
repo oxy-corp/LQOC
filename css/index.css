@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #2E8B57; /* Sea Green */
+    --secondary-color: #FFD700; /* Gold */
+    --background-color: #F0F8FF; /* Alice Blue */
+    --text-color: #333; /* Dark Gray */
+    --hover-color: #3CB371; /* Medium Sea Green */
+}
+
+@font-face {
+    font-family: 'Mattone';
+    src: url('../fonts/Mattone-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Mattone', serif;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav .logo img {
+    height: 40px;
+    width: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li.contact {
+    margin-left: auto;
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: var(--hover-color);
+}
+
+.hero {
+    background: url('../images/hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content p {
+    flex: 1;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.content img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: var(--primary-color);
+    color: rgb(20, 20, 20);
+}
+
+.wrap {
+    margin: 0 auto;
+}
+.sub {
+    padding: 12px;
+    width: 32%;
+    height: 150px;
+    display: table-cell;
+    border-right: solid #a175c4 1px;  
+}
+.sub:last-child {
+    border: 0px;
+}
