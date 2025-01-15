@@ -123,15 +123,19 @@ footer {
 }
 
 .wrap {
-    margin: 0 auto;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
 }
+
 .sub {
     padding: 12px;
-    width: 32%;
+    width: 33%;
     height: 150px;
     display: table-cell;
     border-right: solid #a175c4 1px;  
 }
+
 .sub:last-child {
     border: 0px;
 }
